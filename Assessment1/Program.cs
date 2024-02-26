@@ -14,8 +14,8 @@ namespace Assessment1
              * Create a Game object and call its methods.
              * Create a Testing object to verify the output and operation of the other classes.
              */
-            Game game = new Game();
-            game.Play();
+            Testing testing = new Testing();
+            testing.Test();
         }
     }
 }

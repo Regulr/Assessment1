@@ -16,19 +16,16 @@ namespace Assessment1
          */
 
         //Methods
-        public void Play()
+        public List<int> Play()
         {
             List<int> dieList = new List<int>();
-            for (int count = 0; count < 3; count++)
+            for (int count = 0; count < 3; count++) 
             {
                 Die die = new Die();
-                die.Roll();
+                die.DieValue = die.Roll();
                 dieList.Add(die.DieValue);
             }
-            Console.WriteLine("1." + dieList[0]);
-            Console.WriteLine("2." + dieList[1]);
-            Console.WriteLine("3." + dieList[2]);
-            Console.WriteLine("Overall you rolled a" + dieList.Sum());
+            return dieList;
         }
     }
 }

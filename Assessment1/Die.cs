@@ -11,10 +11,11 @@ namespace Assessment1
         public int DieValue { get; set; }
 
         //Method
-        public void Roll()
+        public int Roll()
         {
             Random rdm = new Random();
-            DieValue = rdm.Next(0, 7);
+            int num = rdm.Next(1, 7);
+            return num;
         }
 
     }
