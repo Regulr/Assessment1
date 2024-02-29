@@ -8,7 +8,13 @@ namespace Assessment1
 {
     internal class Die
     {
-        public int DieValue { get; set; }
+        //Property
+        private int _dieValue;
+        public int DieValue 
+        {
+            get => _dieValue; set => _dieValue = value;
+        } 
+
 
         //Method
         public int Roll()
