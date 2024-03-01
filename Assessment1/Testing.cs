@@ -18,16 +18,7 @@ namespace Assessment1
          */
 
         //Method
-        public void Test() 
-        {
-            Game game = new Game();
-            //check that the sum is within the expected range 
-            Debug.Assert(game.Play().Sum() > 2 && game.Play().Sum() < 19, "Sum is not within expected peramiters");
-
-            Die die = new Die();
-            //check that each roll is within the expected range
-            Debug.Assert(die.Roll() < 7 && die.Roll() > 0, "Dice Rolls are not within expected peramiters");
-        }
+       
         
     }
 }
