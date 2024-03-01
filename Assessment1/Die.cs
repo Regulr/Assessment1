@@ -20,6 +20,7 @@ namespace Assessment1
         public int Roll()
         {
             Random rdm = new Random();
+            //random number between 1 and 6 
             int num = rdm.Next(1, 7);
             return num;
         }
