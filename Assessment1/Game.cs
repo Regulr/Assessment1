@@ -16,6 +16,21 @@ namespace Assessment1
          */
 
         //Methods
-        
+        public List<int> Play()
+        {
+            // initialise a new list 
+            List<int> dieList = new List<int>();
+            //roll dice three times and add values to the list 
+            for (int count = 0; count < 3; count++) 
+            {
+                Die die = new Die();
+                //set DieValue to the value given by the dice roll
+                die.DieValue = die.Roll();
+                //add value to list 
+                dieList.Add(die.DieValue);
+            }
+            //return the list 
+            return dieList;
+        }
     }
 }
